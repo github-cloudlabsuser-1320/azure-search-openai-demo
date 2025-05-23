@@ -1,3 +1,15 @@
+"""
+GitHub Copilot Start in Editor: File Documentation
+
+This module defines the base `Approach` class and supporting data structures for Retrieval Augmented Generation (RAG) approaches in the backend. It provides:
+- The `Approach` abstract base class, which defines the interface for RAG implementations.
+- Data classes for documents, thought steps, token usage, and extra info used in RAG workflows.
+- Methods for search, retrieval, embedding computation, and chat completion orchestration.
+- Integration points for Azure AI Search, Azure OpenAI, and vision models.
+
+To implement a custom RAG approach, subclass `Approach` and implement the `run` and `run_stream` methods.
+"""
+
 import os
 from abc import ABC
 from collections.abc import AsyncGenerator, Awaitable
